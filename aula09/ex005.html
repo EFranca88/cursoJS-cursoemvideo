@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução ao DOM</title>
+    <style>
+        body{
+            background-color: blue;
+            color: white;
+            font: normal 1.1em Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Introdução ao DOM</h1>
+    <p>Lorem ipsum, dolor sit</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">Clique em mim</div>
+    <div name="msg">Verificar elementos</div>
+    <div class="msg">Verificar classe</div>
+    <div id="nmsg">Verificar elementos </div>
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[1]
+        window.document.write('Está escrito assim: ' + p1.innerText)
+        window.document.write('<br/>Está escrito assim: ' + p1.innerHTML)
+        p1.style.color = 'skyblue'
+
+        var d = window.document.getElementById('msg')
+        d.style.background = 'green'
+        d.innerText = 'Estou Aguardando...' //altera o texto da div
+        // window.document.getElementById('msg').innerText = "ola!" //equivalente ao codigo anterior
+        var d = window.document.getElementsByName('msg')[0]
+        d.innerText = 'Ola!'
+
+        // SELECTOR
+        var d = window.document.querySelector('div.msg')
+        d.style.background = 'gray'
+        var d = window.document.querySelector('div#nmsg')
+        d.style.background = 'black'
+    </script>
+</body>
+</html>
