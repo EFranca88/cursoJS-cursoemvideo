@@ -3,13 +3,17 @@
 1. git init --initial-branch=main 
 
 ## Verificar arquivos e diretórios alterados
-1. git status
+2. git status
 
 ## Adicionar arquivos para o commit
-1. git add .
+3. git add .
 
 ## Realiza commit gravando as alterações do projeto
-1. git commit -m "Adiciona exercícios no repositório local e remoto"
+4. git commit -m "Adiciona exercícios no repositório local e remoto"
 
 # REPOSITORIO REMOTO
 Acessar github e criar repositório
+
+git remote add origin >>>link do repositório<<<
+git branch -M main
+git push -u origin main
