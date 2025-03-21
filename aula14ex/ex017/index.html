@@ -3,23 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hora do dia</title>
+  <title>Tabuada</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
   <header>
     <h1>
-       Hora do dia 
+      Tabuada 
     </h1>
   </header> 
   <main>
     <section>
-      <div id="msg">
-         Aqui vai aparecer a mensagem...
+      <div>
+        <p>
+          Número:
+          <input type="number" name="numeroTabuada" id="ntable">
+          <input type="button" value="Gerar tabuada" onclick="calcular()">
+        </p>
       </div>
-      <div id="foto">
-        <img id="imagem" src="Manha.jpeg" alt="Foto do dia"/>
+      <div>
+        <p id="tabuada">Digite acima o numero que quer o resultado!</p>
       </div>
     </section>
   </main>
