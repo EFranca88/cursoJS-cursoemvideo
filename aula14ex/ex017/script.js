@@ -1,8 +1,7 @@
 function calcular() {
-    var baseCalc = document.getElementById('ntable')
-    var restabuada = document.getElementById('tabuada')
+    var baseCalc = document.getElementById('ntable'),
+        restabuada = document.getElementById('tabuada')
     restabuada.innerHTML = ``
-    
     if (baseCalc.value === '') {
         restabuada.innerHTML = `<strong>Impossível calcular!</strong> <br/> Por favor, preencha o campo <strong>Número</strong> antes de gerar a tabuada.`
     } else {

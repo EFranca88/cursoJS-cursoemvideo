@@ -3,22 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pagina modelo</title>
+  <title>Tabuada</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
   <header>
     <h1>
-       Título 
+      Tabuada 
     </h1>
   </header> 
   <main>
     <section>
       <div>
-        
+        <p>
+          Número:
+          <input type="number" name="numeroTabuada" id="ntable">
+          <input type="button" value="Gerar tabuada" onclick="calcular()">
+        </p>
       </div>
       <div>
-        
+        <select name="resList" id="rl" size="10">
+          <option>Digite um número acima</option>
+        </select>
       </div>
     </section>
   </main>

@@ -1,0 +1,26 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+body {
+  background-color: #3b6cd4;
+  font: normal  0.9em Arial;
+}
+header {
+  color: #ffffff;
+  text-align: center;
+}
+section {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  max-width: 500px;
+  height: 240px;
+  margin: auto;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
+}
+footer {
+  color: white;
+  text-align: center;
+  font-style: italic;
+}
