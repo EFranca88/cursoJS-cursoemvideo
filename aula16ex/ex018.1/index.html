@@ -9,21 +9,29 @@
 <body>
   <header>
     <h1>
-       Título 
+        Analisador de Números 
     </h1>
   </header> 
   <main>
     <section>
       <div>
-        
+        <p>
+          Número (entre 1 e 100):
+          <input type="number" name="numbers" id="fnum">
+          <input type="button" value="Adicionar" onclick="adicionar()">
+          <br><br>
+          <select name="addedNumbers" id="flista" size="6" >
+          </select>
+          <br><input type="button" value="Finalizar" onclick="finalizar()">
+        </p>
       </div>
-      <div>
+      <div id="res">
         
       </div>
     </section>
   </main>
   <footer>
-    <p> &copy; Curso em video</p>
+    <p>&copy; Curso em video</p>
   </footer>
   <script src="script.js"></script>
 </body>
